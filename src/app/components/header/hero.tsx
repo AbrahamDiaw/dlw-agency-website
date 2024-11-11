@@ -18,7 +18,7 @@ export default function Hero() {
 			<GlowEffect/>
 			
 			<div className="container px-4 mx-auto relative z-10">
-				<div className="max-w-4xl mx-auto text-center">
+				<div className="max-w-4xl mx-auto text-center sm:mt-0 mt-20">
 					<motion.h1
 						className="text-5xl md:text-7xl font-medium text-text-primary mb-6 tracking-tight"
 						initial={ { opacity: 0, y: 20 } }
