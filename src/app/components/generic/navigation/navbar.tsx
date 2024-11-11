@@ -23,7 +23,7 @@ export default function Navbar() {
 	
 	const headerClass = isScrolled
 		? "bg-[var(--header-bg)] shadow-[0_2px_3px_0_var(--shadow-color)]"
-		: "bg-black shadow-[0_2px_3px_0_var(--shadow-color)]";
+		: "bg-[var(--header-bg-dark)] shadow-[0_2px_3px_0_var(--shadow-color)]";
 	
 	const linkClass = isScrolled
 		? "text-[var(--header-text)] hover:text-[var(--brand-primary)]"
@@ -37,7 +37,7 @@ export default function Navbar() {
 						<div className="flex-shrink-0">
 							<Link href="/">
 								{ <Image
-									src={ isScrolled ? "/black-logo-250.svg" :"/white-logo-250.svg" }
+									src={ isScrolled ? "/black-logo-250.svg" :"/green-logo.svg" }
 									alt="Logo"
 									width={ 40 }
 									height={ 40 }
