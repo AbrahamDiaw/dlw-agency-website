@@ -32,12 +32,12 @@ export default function Hero() {
 						animate={ { opacity: 1, y: 0 } }
 						transition={ { delay: 0.2 } }
 					>
-						Ready to{ ' ' }
+						Transformez vos ambitions digitales en { ' ' }
 						<span
-							className="font-serif italic font-normal bg-gradient-to-r from-primary via-accent-1 to-accent-2 text-transparent bg-clip-text">
-              scale
-            </span>{ ' ' }
-						your brand with paid ads?
+							className="font-serif italic inline-block w-auto whitespace-nowrap font-normal bg-gradient-to-r from-[var(--brand-primary)] via-[var(--accent-1)] to-[var(--accent-2)] text-transparent bg-clip-text">
+                croissance
+						</span>{ ' ' }
+						mesurable
 					</motion.h1>
 					
 					<motion.p
@@ -46,8 +46,7 @@ export default function Hero() {
 						animate={ { opacity: 1, y: 0 } }
 						transition={ { delay: 0.3 } }
 					>
-						If you want to achieve ground-breaking growth with increased sales
-						and profitability with paid ads, then you're in the right place.
+						{ "Vous recherchez à développer votre activité grâce à des solutions technologiques sur-mesure et des stratégies innovantes, alors vous êtes au bon endroit."}
 					</motion.p>
 					
 					<motion.div
@@ -57,10 +56,10 @@ export default function Hero() {
 						transition={ { delay: 0.4 } }
 					>
 						<a href="#contact" className="btn-primary">
-							Book a call
+							Prendre rendez-vous
 						</a>
 						<a href="#clients" className="btn-secondary">
-							Learn More
+							En savoir plus
 						</a>
 					</motion.div>
 				</div>
@@ -103,7 +102,7 @@ const StarRating = () => {
 				transition={ { delay: 0.5 } }
 				className="ml-2 text-gray-400 text-sm"
 			>
-				200+ businesses scaled
+				200+ projets transformés en succès
 			</motion.span>
 		</div>
 	);
