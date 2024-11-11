@@ -19,13 +19,6 @@ export default function Hero() {
 			
 			<div className="container px-4 mx-auto relative z-10">
 				<div className="max-w-4xl mx-auto text-center">
-					<div className="mb-8 flex justify-center">
-						<div className="flex flex-col items-center gap-4">
-							<AvatarGroup/>
-							<StarRating/>
-						</div>
-					</div>
-					
 					<motion.h1
 						className="text-5xl md:text-7xl font-medium text-text-primary mb-6 tracking-tight"
 						initial={ { opacity: 0, y: 20 } }
@@ -41,13 +34,20 @@ export default function Hero() {
 					</motion.h1>
 					
 					<motion.p
-						className="text-lg md:text-xl text-text-secondary mb-12 max-w-2xl mx-auto"
+						className="text-lg md:text-xl text-text-secondary mb-6 max-w-2xl mx-auto"
 						initial={ { opacity: 0, y: 20 } }
 						animate={ { opacity: 1, y: 0 } }
 						transition={ { delay: 0.3 } }
 					>
-						{ "Vous recherchez à développer votre activité grâce à des solutions technologiques sur-mesure et des stratégies innovantes, alors vous êtes au bon endroit."}
+						{ "Vous recherchez à développer votre activité grâce à des solutions technologiques sur-mesure et des stratégies innovantes, alors vous êtes au bon endroit." }
 					</motion.p>
+					
+					<div className="mb-8 flex justify-center">
+						<div className="flex flex-col items-center gap-4">
+							<AvatarGroup/>
+							<StarRating/>
+						</div>
+					</div>
 					
 					<motion.div
 						className="flex flex-col sm:flex-row gap-4 justify-center"
