@@ -58,6 +58,8 @@
 
         /* Brand Colors */
         --brand-primary: #10B981;
+        --brand-secondary: #00221C;
+        --brand-secondary-h: rgba(0, 34, 28, 0.8);
         --brand-primary-light: #34D399;
         --brand-primary-dark: #059669;
 

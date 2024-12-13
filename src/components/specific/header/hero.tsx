@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import { Container } from "@/components/generic/container";
 
 
 const avatars = [
@@ -16,8 +17,7 @@ export default function Hero() {
 	return (
 		<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
 			<GlowEffect/>
-			
-			<div className="container px-4 mx-auto relative z-10">
+			<Container as={ 'div' } className="bg-mt-24 sm:mt-32 md:mt-56 z-50">
 				<div className="max-w-4xl mx-auto text-center sm:mt-0 mt-20">
 					<motion.h1
 						className="text-5xl md:text-7xl font-medium text-text-primary mb-6 tracking-tight"
@@ -63,12 +63,13 @@ export default function Hero() {
 						</a>
 					</motion.div>
 				</div>
-			</div>
+			</Container>
 		</section>
+	
 	);
 }
 
-const GlowEffect = () => {
+export const GlowEffect = () => {
 	return (
 		<div className="absolute inset-0 overflow-hidden pointer-events-none">
 			<div className="absolute -left-1/2 -top-1/2 w-[200%] h-[200%] animate-slow-spin">
